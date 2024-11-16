@@ -2,6 +2,8 @@ BoxLayout:
     Button:
         text: "Press me"
         on_press: app.handle_button_press(self)
+        on_release: app.handle_button_release(self)
     Button:
         text: "Don't press me"
         on_press: app.handle_button_press(self)
+        on_release: app.handle_button_release(self)

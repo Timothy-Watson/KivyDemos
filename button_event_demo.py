@@ -13,6 +13,11 @@ class ButtonEventDemo(App):
         # We can then access its attributes, like text, pos, font_name, width...
         # But we can not directly access its id if specified in the kv file (due to the way Kivy is designed)
         print("Button text: '{}', pos: {}".format(button.text, button.pos))
+        # print('app: ' + self)
+
+
+    def handle_button_release(self, button):
+        print(f"Button released: {button.text}, pos: {button.pos}, width {button.width}")
 
 
 ButtonEventDemo().run()
