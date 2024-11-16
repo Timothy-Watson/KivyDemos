@@ -17,7 +17,7 @@ def load_guitars(filename):
     guitars = []
     with open(filename) as in_file:
         records = json.load(in_file)
-    print(repr(records))  # Let's see what the data looks like
+    # print(repr(records))  # Let's see what the data looks like
     for record in records:
         guitars.append(Guitar(**record))
     return guitars
